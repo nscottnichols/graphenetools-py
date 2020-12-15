@@ -69,7 +69,7 @@ fig.set_dpi(300)
 ```
 
 
-![png](images/graphene_lattice_funky_box.png)
+![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/graphene_lattice_funky_box.png)
 
 Additionally, the $C_{1/3}$ phase locations can be plotted along with the graphene lattice using the `plot_graphene_lattice_with_c_one_third()` function.
 
@@ -84,7 +84,7 @@ fig.set_dpi(300)
 ```
 
 
-![png](images/graphene_lattice_with_c_one_third.png)
+![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/graphene_lattice_with_c_one_third.png)
 
 
 <a id='generate_qmc_parameters'></a>
@@ -105,7 +105,7 @@ fig.set_dpi(300)
 
 
 
-![png](images/roughly_square.png)
+![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/roughly_square.png)
 
 
 For non-"roughly square" command line parameters and plots use functions `c_one_third_commensurate_command()` and `c_one_third_commensurate_command_plot()`.
@@ -125,7 +125,7 @@ fig.set_dpi(300)
 
 
 
-![png](images/not_roughly_square.png)
+![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/not_roughly_square.png)
 
 
 <a id='generate_potential_plots'></a>
@@ -189,7 +189,7 @@ fig.savefig("V1D_optimized_close.png",bbox_inches="tight")
 ```
 
 
-![png](images/V1D.png)
+![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/V1D.png)
 
 
 ##### Minimum of 1D potential
@@ -226,7 +226,7 @@ with gt.plt.style.context(mplstylefile):
 ```
 
 
-![png](images/zmin.png)
+![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/zmin.png)
 
 
 #### 2D potential plot
@@ -258,7 +258,7 @@ with gt.plt.style.context(mplstylefile):
 ```
 
 
-![png](images/V2D_uc.png)
+![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/V2D_uc.png)
 
 
 The 2D potential interaction on the Cartesian plan is generated using the `get_V2D()` function and takes the generated 2D lookup table as a parameter. Plots of the 2D potential can be generated using `plot_V2D()` with the option to include the graphene lattice.
@@ -286,7 +286,7 @@ except:
 ```
 
 
-![png](images/V2D.png)
+![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/V2D.png)
 
 
 #### 3D potential plot (still a 2D slice)
@@ -318,7 +318,7 @@ except:
 ```
 
 
-![png](images/V3D.png)
+![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/V3D.png)
 
 
 #### Additional usage
