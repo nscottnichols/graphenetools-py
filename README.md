@@ -33,11 +33,14 @@ For example, to run the listed command to print the parameters corresponding to 
 ```
 python -m gt_rs 5 --strain 0.25
 ```
+or
+```
+gt_rs 5 --strain 0.25
+```
 
 ## Advanced usage
-Better usage of the Graphene Tools package can be achieved by importing the pacakge directly into your project or notebook environment using `import graphenetools as gt`. Some advanced usage cases are discussed below.
+Better usage of the Graphene Tools package can be achieved by importing the pacakge directly into your project or notebook environment using `from graphenetools import gt`. Some advanced usage cases are discussed below.
 
-<a id='lattice_vectors'></a>
 ### Lattice vectors
 Generate basis, lattice, and reciprocal lattice vectors for uniaxially strained graphene.
 
@@ -55,7 +58,6 @@ strain = 0.50 # Strain value in armchair direction
 Am_c_one_third, An_c_one_third = gt.get_graphene_c_one_third_vectors(strain)
 ```
 
-<a id='plot_lattice'></a>
 # Plot lattice
 Plots of the graphene lattice can be made using the `plot_graphene_lattice()` function.
 
@@ -87,7 +89,6 @@ fig.set_dpi(300)
 ![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/graphene_lattice_with_c_one_third.png)
 
 
-<a id='generate_qmc_parameters'></a>
 # Generate QMC parameters
 Simulation parameters to produce a roughly square simulation cell commensurate with the $C_{1/3}$ phase for use with QMC software hosted at [code.delmaestro.org](https://code.delmaestro.org) can be generated using the `roughly_square()` function and a plot of simulation cell generated using the `roughly_square_plot()` function.
 
@@ -128,7 +129,6 @@ fig.set_dpi(300)
 ![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/not_roughly_square.png)
 
 
-<a id='generate_potential_plots'></a>
 ### Generate potential plots
 The potential can also be calculated for the helium-graphene interaction using Graphene Tools. Here are some demonstrations at various strains.
 
@@ -145,7 +145,7 @@ _x = 0.00
 _y = 0.00
 _z = 3.00
 
-#Generate helium-graphene interaction potential for a single point
+# Generate helium-graphene interaction potential for a single point
 carbon_carbon_distance=1.42
 poisson_ratio=0.165
 k_max=10000
@@ -321,5 +321,5 @@ except:
 ![png](https://raw.githubusercontent.com/nscottnichols/graphenetools-py/main/images/V3D.png)
 
 
-#### Additional usage
+### Additional usage
 See function documentation to discover additional usage.
