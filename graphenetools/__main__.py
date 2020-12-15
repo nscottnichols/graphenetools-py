@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 import sys
 import argparse
-mpl.use("agg")
 
 def create_parser():
     parser = argparse.ArgumentParser(description="Prints list of commands and short commands with descriptions.")
