@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="graphenetools-py",
-    version="0.9.4",
+    version="0.9.5",
     description="Tools for generating parameters for helium on uniaxially strained graphene simulations using quantum Monte Carlo software hosted at https://code.delmaestro.org and plots of the helium graphene interaction",
     long_description=README,
     long_description_content_type="text/markdown",
