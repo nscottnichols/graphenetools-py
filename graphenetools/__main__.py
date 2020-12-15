@@ -17,15 +17,18 @@ def main(argv=None):
     parser = create_parser()
     args = parser.parse_args(argv[1:])
 
-    print("gt_roughly_square: Print command line arguments for uniaxially strained graphene and use with QMC software located at https://code.delmaestro.org")
-    print("gt_roughly_square_plot: Plot graphene lattice and C1/3 phase corresponding to printed command line arguments for uniaxially strained graphene (for use with QMC software located at https://code.delmaestro.org)")
-    print("gt_c_one_third_commensurate_command: Print command line arguments for uniaxially strained graphene and use with QMC software located at https://code.delmaestro.org")
-    print("gt_c_one_third_commensurate_command_plot: Plot graphene lattice and C1/3 phase corresponding to printed command line arguments for uniaxially strained graphene (for use with QMC software located at https://code.delmaestro.org)")
     print("")
-    print("gt_rs: Short command to `gt_roughly_square`")
-    print("gt_rsp: Short command to `gt_roughly_square_plot`")
-    print("gt_cotcc: Short command to `gt_c_one_third_commensurate_command`")
-    print("gt_cotccp: Short command to `gt_c_one_third_commensurate_command_plot`")
+    print("Graphene Tools Commands:")
+    print("    gt_roughly_square: Print command line arguments for uniaxially strained graphene and use with QMC software located at https://code.delmaestro.org")
+    print("    gt_roughly_square_plot: Plot graphene lattice and C1/3 phase corresponding to printed command line arguments for uniaxially strained graphene (for use with QMC software located at https://code.delmaestro.org)")
+    print("    gt_c_one_third_commensurate_command: Print command line arguments for uniaxially strained graphene and use with QMC software located at https://code.delmaestro.org")
+    print("    gt_c_one_third_commensurate_command_plot: Plot graphene lattice and C1/3 phase corresponding to printed command line arguments for uniaxially strained graphene (for use with QMC software located at https://code.delmaestro.org)")
+    print("")
+    print("Graphene Tools Commands (short names):")
+    print("    gt_rs: Short command to `gt_roughly_square`")
+    print("    gt_rsp: Short command to `gt_roughly_square_plot`")
+    print("    gt_cotcc: Short command to `gt_c_one_third_commensurate_command`")
+    print("    gt_cotccp: Short command to `gt_c_one_third_commensurate_command_plot`")
 
     return 0
 

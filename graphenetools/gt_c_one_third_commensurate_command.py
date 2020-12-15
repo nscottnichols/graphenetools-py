@@ -3,7 +3,7 @@ import sys
 import argparse
 import matplotlib as mpl
 mpl.use("agg")
-import graphenetools as gt
+from graphenetools import gt
 
 def create_parser():
     parser = argparse.ArgumentParser(description="Print command line arguments for uniaxially strained graphene and use with QMC software located at https://code.delmaestro.org")
