@@ -3,7 +3,9 @@ import sys
 import argparse
 
 def create_parser():
-    parser = argparse.ArgumentParser(description="Prints list of commands and short commands with descriptions.")
+    parser = argparse.ArgumentParser(description="Prints list of commands and short commands with descriptions.",
+            formatter_class=argparse.ArgumentDefaultsHelpFormatter
+            )
     return parser
 
 def main(argv=None):

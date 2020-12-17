@@ -6,7 +6,9 @@ mpl.use("agg")
 from graphenetools import gt
 
 def create_parser():
-    parser = argparse.ArgumentParser(description="Print command line arguments for uniaxially strained graphene and use with QMC software located at https://code.delmaestro.org")
+    parser = argparse.ArgumentParser(description="Print command line arguments for uniaxially strained graphene and use with QMC software located at https://code.delmaestro.org",
+            formatter_class=argparse.ArgumentDefaultsHelpFormatter
+            )
     parser.add_argument("n", type=int,
                         help="`(2n)^2` C1/3 adsorption sites with a roughly square simulation cell (for isotropic graphene, considerably less square with strain)")
     parser.add_argument("--strain", type=float, default=0.0,

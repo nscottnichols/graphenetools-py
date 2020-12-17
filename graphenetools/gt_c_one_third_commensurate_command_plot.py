@@ -4,7 +4,9 @@ import argparse
 from graphenetools import gt
 
 def create_parser():
-    parser = argparse.ArgumentParser(description="Plot graphene lattice and C1/3 phase corresponding to printed command line arguments for uniaxially strained graphene (for use with QMC software located at https://code.delmaestro.org)")
+    parser = argparse.ArgumentParser(description="Plot graphene lattice and C1/3 phase corresponding to printed command line arguments for uniaxially strained graphene (for use with QMC software located at https://code.delmaestro.org)",
+            formatter_class=argparse.ArgumentDefaultsHelpFormatter
+            )
     parser.add_argument("m", type=int,
                         help="Simulation cell parameter to generate `2*m*n` C1/3 adsorption sites")
     parser.add_argument("n", type=int,
