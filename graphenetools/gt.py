@@ -166,7 +166,8 @@ def c_one_third_commensurate_command(m,n,strain, carbon_carbon_distance=1.42, po
     Am_c_on_third, An_c_on_third = get_graphene_c_one_third_vectors(strain, carbon_carbon_distance=carbon_carbon_distance, poisson_ratio=poisson_ratio)
     Lx = Am_c_on_third[0]*m
     Ly = An_c_on_third[1]*2*n
-    print("-N {} --Lx {} --Ly {}".format(N,Lx,Ly))
+    cmd = "-N {} --Lx={} --Ly={}".format(N,Lx,Ly)
+    return(cmd)
 
 def c_one_third_commensurate_command_plot(m,n,strain,fig_ax=None, carbon_carbon_distance=1.42, poisson_ratio=0.165):
     """Plots graphene lattice with `2*m*n` C1/3 adsorption sites."""
