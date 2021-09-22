@@ -178,7 +178,8 @@ def c_one_third_commensurate_command_plot(m,n,strain,fig_ax=None, carbon_carbon_
 
 def roughly_square(n,strain, carbon_carbon_distance=1.42, poisson_ratio=0.165):
     """Prints QMC parameters for `(2n)^2` C1/3 adsorption sites with a roughly square simulation cell (for isotropic graphene, considerably less square with strain)."""
-    c_one_third_commensurate_command(n,2*n,strain,carbon_carbon_distance=carbon_carbon_distance,poisson_ratio=poisson_ratio)
+    params = c_one_third_commensurate_command(n,2*n,strain,carbon_carbon_distance=carbon_carbon_distance,poisson_ratio=poisson_ratio)
+    return params
 
 def roughly_square_plot(n,strain,fig_ax=None, carbon_carbon_distance=1.42, poisson_ratio=0.165):
     """Plots graphene lattice with `(2n)^2` C1/3 adsorption sites for a roughly square simulation cell (for isotropic graphene, considerably less square with strain)."""
